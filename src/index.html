@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Bliss</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="md:hidden bg-customgray">
+          <div class="w-4/5 m-auto flex py-2">
+            <img src="./images/japanese-food-white.png" alt="" />
+            <div class="grow flex text-center items-center justify-center">
+              <h1 class="font-primary text-3xl text-white italic">
+                Bistro Bliss
+              </h1>
+            </div>
+            <button id="navbtn">
+              <svg
+                class="fill-current w-5 text-white"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+        <div
+          class="w-full m-auto text-white flex flex-col space-y-6 text-center py-10 absolute z-10 bg-customgray bg-opacity-75 invisible"
+          id="navmenu"
+        >
+          <a
+            href="./index.html"
+            class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+            >Home</a
+          >
+          <a
+            href="./about.html"
+            class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+            >About</a
+          >
+          <a
+            href="./menu.html"
+            class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+            >Menu</a
+          >
+          <a
+            href="./blog.html"
+            class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+            >Pages</a
+          >
+          <a
+            href="./contact.html"
+            class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <div class="bg-customgray hidden md:block">
+        <div
+          class="flex flex-row gap-5 text-white font-secondary md:w-4/5 w-11/12 m-auto items-center py-2 text-sm font-extralight"
+        >
+          <div class="flex flex-1 gap-2">
+            <a href="tel:(414)857-0107">
+              <div class="md:flex gap-1 shrink items-center">
+                <div>
+                  <img src="images/phone.svg" alt="" style="max-width: 70%" />
+                </div>
+                <p>(414) 857 - 0107</p>
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-1 gap-2">
+            <a href="mailto:yummy@bistrobliss.com">
+              <div class="md:flex gap-1 shrink items-center">
+                <div>
+                  <img src="images/mail.svg" alt="" style="max-width: 70%" />
+                </div>
+                <p>yummy@bistrobliss</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <div class="md:flex grid grid-cols-2 shrink">
+              <a href="https://www.twitter.com/"
+                ><img
+                  src="images/1.png"
+                  alt=""
+                  class="transition duration-500 hover:outline rounded-full hover:outline-2 w-[90%]"
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img
+                  src="images/2.png"
+                  alt=""
+                  class="transition duration-500 hover:outline rounded-full hover:outline-2 w-[90%]"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img
+                  src="images/3.png"
+                  alt=""
+                  class="transition duration-500 hover:outline rounded-full hover:outline-2 w-[90%]"
+              /></a>
+              <a href="https://www.github.com/"
+                ><img
+                  src="images/4.png"
+                  alt=""
+                  class="transition duration-500 hover:outline rounded-full hover:outline-2 w-[90%]"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-background1">
+        <div class="md:flex md:w-4/5 w-11/12 m-auto py-5 items-center">
+          <a href="#">
+            <div
+              class="flex items-center gap-4 m-auto justify-center md:justify-normal"
+            >
+              <img src="images/japanese-food.png" alt="" />
+              <p
+                class="text-4xl font-semibold italic font-primary text-customgray"
+              >
+                Bistro Bliss
+              </p>
+            </div>
+          </a>
+          <div
+            class="flex flex-1 md:flex lg:flex gap-2 font-secondary font-semibold items-center justify-center mt-2 md:mt-0 text-sm hidden relative min-w-max"
+          >
+            <a
+              href="./index.html"
+              class="md:px-4 px-2 py-1 bg-background2 rounded-3xl transition duration-500"
+              >Home</a
+            >
+            <a
+              href="./about.html"
+              class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+              >About</a
+            >
+            <a
+              href="./menu.html"
+              class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500 hidden lg:block"
+              >Menu</a
+            >
+            <a
+              href="./blog.html"
+              class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500 hidden lg:block"
+              >Pages</a
+            >
+            <a
+              href="./contact.html"
+              class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500 hidden lg:block"
+              >Contact</a
+            >
+            <p
+              class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500 lg:hidden cursor-pointer flex group"
+              id="more"
+            >
+              More
+              <svg
+                class="group-hover:animate-bounce"
+                height="20"
+                viewBox="0 0 40 40"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M14 20l10 10 10-10z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+              </svg>
+            </p>
+            <div
+              class="absolute flex-col bg-background1 space-y-2 left-[60%] top-10 hidden"
+              id="moremenu"
+            >
+              <a
+                href="./menu.html"
+                class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+                >Menu</a
+              >
+              <a
+                href="./blog.html"
+                class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+                >Pages</a
+              >
+              <a
+                href="./contact.html"
+                class="md:px-4 px-2 py-1 hover:bg-background2 rounded-3xl transition duration-500"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="font-secondary text-center min-w-max">
+            <a href="./book.html">
+              <button
+                class="mt-3 md:mt-0 rounded-3xl border-2 py-2.5 px-5 border-customgray hover:bg-customgray hover:text-white font-bold text-sm transition duration-500"
+              >
+                Book A Table
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+    <div
+      class="flex items-center font-secondary text-textblack bg-focus w-full md:min-h-screen min-h-[75vh] bg-cover bg-center"
+    >
+      <div
+        class="w-4/5 sm:2/5 md:w-3/5 lg:w-2/5 text-center m-auto left-0 right-0 md:my-16 lg:my-auto pt-10 sm:pt-auto"
+      >
+        <h1 class="text-[5.2rem] leading-[86px] font-primary">
+          Best food for your taste
+        </h1>
+        <p
+          class="text-lg mt-8 md:mx-10 tracking-tight font-secondary font-normal"
+        >
+          Discover detectable cuisine and unforgettable moments in our
+          welcoming, culinary haven.
+        </p>
+        <div class="mt-10 text-sm tracking-tight pb-8">
+          <a href="./book.html">
+            <button
+              class="border-2 border-btnbrown bg-btnbrown px-7 py-4 rounded-full text-white md:mr-2 font-semibold hover:bg-transparent border-2 hover:border-btnbrown hover:text-black transition duration-500"
+            >
+              Book A Table
+            </button></a
+          >
+          <a href="./menu.html">
+            <button
+              class="border-2 border-textblack px-7 py-4 rounded-full md:ml-1 my-2 md:my-0 font-bold hover:bg-btnbrown hover:text-white hover:border-btnbrown transition duration-500"
+            >
+              Explore Menu
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- hero -->
+    <div class="text-center text-textblack">
+      <h1 class="font-primary text-5xl font-medium mt-20 mb-14 w-11/12 m-auto">
+        Browse Our Menu
+      </h1>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 w-4/5 m-auto pb-24">
+        <div
+          class="border-background2 border-2 p-5 rounded-2xl group hover:shadow-xl transition duration-300"
+        >
+          <img
+            src="./images/cup.png"
+            alt=""
+            class="m-auto w-24 mt-3 group-hover:animate-bounce"
+          />
+          <h3 class="text-xl font-bold mt-5 mb-2">Breakfast</h3>
+          <p class="text-sm mb-5 font-medium">
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a
+            href="./menu.html"
+            class="font-bold text-btnbrown group-hover:underline underline-offset-8 pt-1 pb-2 px-2 text-sm hover:text-textblack"
+            >Explore Menu</a
+          >
+        </div>
+        <div
+          class="border-background2 border-2 p-5 rounded-2xl group hover:shadow-xl transition duration-300"
+        >
+          <img
+            src="./images/bowl.png"
+            alt=""
+            class="m-auto w-24 mt-3 group-hover:animate-bounce"
+          />
+          <h3 class="text-xl font-bold mt-5 mb-2">Main Dishes</h3>
+          <p class="text-sm mb-5 font-medium">
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a
+            href="./menu.html"
+            class="font-bold text-btnbrown group-hover:underline underline-offset-8 pt-1 pb-2 px-2 text-sm hover:text-textblack"
+            >Explore Menu</a
+          >
+        </div>
+        <div
+          class="border-background2 border-2 p-5 rounded-2xl group hover:shadow-xl transition duration-300"
+        >
+          <img
+            src="./images/glass.png"
+            alt=""
+            class="m-auto w-24 mt-3 group-hover:animate-bounce"
+          />
+          <h3 class="text-xl font-bold mt-5 mb-2">Drinks</h3>
+          <p class="text-sm mb-5 font-medium">
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a
+            href="./menu.html"
+            class="font-bold text-btnbrown group-hover:underline underline-offset-8 pt-1 pb-2 px-2 text-sm hover:text-textblack"
+            >Explore Menu</a
+          >
+        </div>
+        <div
+          class="border-background2 border-2 p-5 rounded-2xl group hover:shadow-xl transition duration-300"
+        >
+          <img
+            src="./images/cake.png"
+            alt=""
+            class="m-auto w-24 mt-3 group-hover:animate-bounce"
+          />
+          <h3 class="text-xl font-bold mt-5 mb-2">Desserts</h3>
+          <p class="text-sm mb-5 font-medium">
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a
+            href="./menu.html"
+            class="font-bold text-btnbrown group-hover:underline underline-offset-8 pt-1 pb-2 px-2 text-sm hover:text-textblack"
+            >Explore Menu</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+    <div class="bg-background1 py-24 text-textblack">
+      <div class="grid lg:grid-cols-2 w-4/5 m-auto text-center lg:text-left">
+        <div class="relative lg:h-[80%] xl:h-auto">
+          <img
+            src="./images/aboutimg.png"
+            alt=""
+            class="md:pb-14 md:pr-14 relative"
+          />
+
+          <div
+            class="bg-customgray px-5 md:px-12 md:py-10 py-5 font-secondary md:absolute md:w-2/3 md:rounded-xl rounded-b-xl md:bottom-0 z-10 md:right-0"
+          >
+            <h3 class="md:mb-8 mb-3 font-semibold text-white text-xl">
+              Come and visit us
+            </h3>
+            <div class="flex flex-col md:space-y-6 space-y-2 font-extralight">
+              <div>
+                <a href="tel:(414)857-0107">
+                  <div class="flex gap-5 group">
+                    <div>
+                      <img
+                        src="./images/phone.svg"
+                        alt=""
+                        class="group-hover:animate-bounce"
+                      />
+                    </div>
+                    <p class="text-background1 text-sm">(414)857 - 0107</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="mailto:yummy@bistrobliss.com">
+                  <div class="flex gap-5 group">
+                    <div>
+                      <img
+                        src="./images/mail.svg"
+                        alt=""
+                        class="group-hover:animate-bounce"
+                      />
+                    </div>
+                    <p class="text-background1 text-sm">
+                      happytummy@restaurant.com
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://maps.app.goo.gl/mTC3oPkgPuAJC53e9">
+                  <div class="flex gap-4 group">
+                    <div>
+                      <img
+                        src="./images/location.svg"
+                        width="26px"
+                        alt=""
+                        class="group-hover:animate-bounce"
+                      />
+                    </div>
+                    <p class="text-background1 text-sm">
+                      837 W.Marshall Lane Marshalltown, IA 50158, Los Angeles
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-14 lg:pt-24 lg:pl-20">
+          <h1 class="font-primary font-medium text-5xl leading-tight">
+            We provide healthy food for your family.
+          </h1>
+          <p class="font-semibold text-l my-5">
+            Our story began with a vision to create a unique dining experience
+            that merges fine dining, exceptional service, and a vibrant
+            ambiance. Rooted in city's rich culinary culture, we aim to honor
+            our local roots while infusing a global palate.
+          </p>
+          <p class="text-sm text-textgrey font-medium">
+            At place, we believe that dining is not just about food, but also
+            about the overall experience. Our staff, renowned for their warmth
+            and dedication, strives to make every visit an unforgettable event.
+          </p>
+          <a href="./about.html">
+            <button
+              class="mt-10 border-2 py-4 px-7 rounded-full font-bold border-customgray hover:bg-customgray hover:text-white text-sm transition duration-500"
+            >
+              More About Us
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div class="lg:text-left w-4/5 m-auto py-20 text-textblack">
+      <h1
+        class="font-primary text-5xl mb-14 lg:w-1/2 text-center lg:text-left font-semibold leading-tight"
+      >
+        We also offer unique services for your events
+      </h1>
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 font-secondary space-y-8 md:space-y-0 md:gap-y-10"
+      >
+        <div class="text-center lg:text-left group max-w-max">
+          <a href="">
+            <div class="relative">
+              <h2
+                class="absolute z-10 font-primary italic text-white text-4xl font-semibold top-[40%] left-[28%] lg:left-[20%] drop-shadow-lg invisible group-hover:visible transition duration-500"
+              >
+                Caterings
+              </h2>
+              <img
+                src="./images/catering.png"
+                alt=""
+                class="rounded w-4/5 m-auto md:w-full filter group-hover:blur-sm transition-all duration-300 group-hover:brightness-50 max-w-min"
+              />
+            </div>
+            <h3
+              class="font-black text-xl md:my-5 my-2 tracking-tight group-hover:text-btnbrown group-hover:underline underline-offset-8 transition-all duration-500"
+            >
+              Caterings
+            </h3>
+            <p class="text-textgrey text-sm font-medium mr-3">
+              In the new era of technology we look in the future with certainty
+              for life.
+            </p>
+          </a>
+        </div>
+        <div class="text-center lg:text-left group max-w-max">
+          <a href="">
+            <div class="relative">
+              <h2
+                class="absolute z-10 font-primary italic text-white text-4xl font-semibold top-[40%] left-[28%] lg:left-[20%] drop-shadow-lg invisible group-hover:visible transition duration-500"
+              >
+                Birthdays
+              </h2>
+              <img
+                src="./images/birthday.png"
+                alt=""
+                class="rounded w-4/5 m-auto md:w-full filter group-hover:blur-sm transition-all duration-300 group-hover:brightness-50 max-w-min"
+              />
+            </div>
+            <h3
+              class="font-black text-xl md:my-5 my-2 tracking-tight group-hover:text-btnbrown group-hover:underline underline-offset-8 transition-all duration-500"
+            >
+              Birthdays
+            </h3>
+            <p class="text-textgrey text-sm font-medium mr-3">
+              In the new era of technology we look in the future with certainty
+              for life.
+            </p>
+          </a>
+        </div>
+        <div class="text-center lg:text-left group max-w-max">
+          <a href="">
+            <div class="relative">
+              <h2
+                class="absolute z-10 font-primary italic text-white text-4xl font-semibold top-[40%] left-[28%] lg:left-[20%] drop-shadow-lg invisible group-hover:visible transition duration-500"
+              >
+                Weddings
+              </h2>
+              <img
+                src="./images/wedding.png"
+                alt=""
+                class="rounded w-4/5 m-auto md:w-full filter group-hover:blur-sm transition-all duration-300 group-hover:brightness-50 max-w-min"
+              />
+            </div>
+            <h3
+              class="font-black text-xl md:my-5 my-2 tracking-tight group-hover:text-btnbrown group-hover:underline underline-offset-8 transition-all duration-500"
+            >
+              Weddings
+            </h3>
+            <p class="text-textgrey text-sm font-medium mr-3">
+              In the new era of technology we look in the future with certainty
+              for life.
+            </p>
+          </a>
+        </div>
+        <div class="text-center lg:text-left group max-w-max">
+          <a href="">
+            <div class="relative">
+              <h2
+                class="absolute z-10 font-primary italic text-white text-4xl font-semibold top-[40%] left-[34%] lg:left-[27%] drop-shadow-lg invisible group-hover:visible transition duration-500"
+              >
+                Events
+              </h2>
+              <img
+                src="./images/event.png"
+                alt=""
+                class="rounded w-4/5 m-auto md:w-full filter group-hover:blur-sm transition-all duration-300 group-hover:brightness-50 max-w-min"
+              />
+            </div>
+            <h3
+              class="font-black text-xl md:my-5 my-2 tracking-tight group-hover:text-btnbrown group-hover:underline underline-offset-8 transition-all duration-500"
+            >
+              Events
+            </h3>
+            <p class="text-textgrey text-sm font-medium mr-3">
+              In the new era of technology we look in the future with certainty
+              for life.
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div class="bg-background1 lg:pt-24 text-textblack py-24 lg:py-0">
+      <div class="w-4/5 m-auto grid lg:grid-cols-5">
+        <div class="col-span-3">
+          <div class="grid grid-cols-5 lg:grid-rows-2 md:gap-5 gap-1">
+            <img src="./images/chef.png" alt="" class="row-span-2 col-span-3" />
+            <img
+              src="./images/contentimg2.png"
+              alt=""
+              class="col-span-2 md:mt-10"
+            />
+            <img src="./images/contentimg1.png" alt="" class="col-span-2" />
+          </div>
+        </div>
+        <div
+          class="col-span-3 lg:col-span-2 lg:pt-32 lg:pl-16 lg:pr-6 text-center md:text-left md:flex lg:block mt-12 lg:mt-0"
+        >
+          <div class="md:w-1/2 lg:w-full">
+            <h1 class="text-5xl font-primary font-medium">
+              Fastest Food Delivery in City
+            </h1>
+            <p class="my-5 text-sm font-medium font-secondary tracking-tight">
+              Our visual designer lets you quickly and of drag a down your way
+              to customapps for both keep desktop
+            </p>
+          </div>
+          <div>
+            <ul class="mt-8 ml-1 md:ml-10 lg:ml-0 font-secondary font-semibold">
+              <li class="flex gap-4 mb-3">
+                <img src="./images/contenticon1.png" alt="" /> Delivery within
+                30 minutes
+              </li>
+              <li class="flex gap-4 mb-3">
+                <img src="./images/contenticon2.png" alt="" /> Best Offer &
+                Prices
+              </li>
+              <li class="flex gap-4">
+                <img src="./images/contenticon3.png" alt="" /> Online Services
+                Available
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="text-textblack">
+      <h1 class="font-primary text-5xl text-center font-medium pt-20 pb-14">
+        What Our Customers Say
+      </h1>
+      <div
+        class="grid lg:grid-cols-3 gap-5 w-4/5 m-auto pb-24 font-secondary tracking-tight"
+      >
+        <div class="bg-background1 p-8 rounded-xl">
+          <h3 class="text-btnbrown font-extrabold text-xl mt-1">
+            "The best restaurant"
+          </h3>
+          <p class="mt-5 mb-8 font-medium">
+            Last night, we dined at place and were simply blown away. From the
+            moment we stepped in, we were enveloped in an inviting atmosphere
+            and greeted with warm smiles.
+          </p>
+          <hr />
+          <div class="flex items-center gap-5 mt-8">
+            <img src="./images/user1.png" alt="" />
+            <div class="text-sm">
+              <h4 class="font-bold">Sophire Robson</h4>
+              <span>Los Angeles, CA</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-background1 p-8 rounded-xl">
+          <h3 class="text-btnbrown font-extrabold text-xl mt-1">
+            "Simply delicious"
+          </h3>
+          <p class="mt-5 mb-8 font-medium">
+            Place exceeded my expectations on all fronts. The ambiance was cozy
+            and relaxed, making it a perfect venue for our anniversary dinner.
+            Each dish was prepared and beautifully presented.
+          </p>
+          <hr />
+          <div class="flex items-center gap-5 mt-8">
+            <img src="./images/user2.png" alt="" />
+            <div class="text-sm">
+              <h4 class="font-bold">Matt Cannon</h4>
+              <span>San Diego, CA</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-background1 p-8 rounded-xl">
+          <h3 class="text-btnbrown font-extrabold text-xl mt-1">
+            "One of a kind restaurant"
+          </h3>
+          <p class="mt-5 mb-8 font-medium">
+            The culinary experience at place is first to none. The atmosphere is
+            vibrant, the food - nothing short of extraordinary. The food was the
+            highlight of our evening. Highly recommended.
+          </p>
+          <hr />
+          <div class="flex items-center gap-5 mt-8">
+            <img src="./images/user3.png" alt="" />
+            <div class="text-sm">
+              <h4 class="font-bold">Andy Smith</h4>
+              <span>San Francisco, CA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonial -->
+    <div class="bg-background1 font-secondary">
+      <div class="w-4/5 m-auto pt-24 pb-20">
+        <div
+          class="md:flex justify-center mb-14 text-center md:text-left items-center"
+        >
+          <h1 class="font-primary text-5xl flex-1 text-textblack font-semibold">
+            Our Blog & Articles
+          </h1>
+          <div>
+            <a href="./blog.html">
+              <button
+                class="bg-btnbrown px-7 py-4 rounded-full text-sm font-medium text-white hover:bg-transparent border-2 hover:border-btnbrown hover:text-black font-secondary mt-6 md:mt-0 transition duration-500"
+              >
+                Read All Articles
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-5 font-secondary">
+          <div class="bg-white shadow-lg rounded-xl hover:shadow-2xl">
+            <a href="./blog.html">
+              <img src="./images/burger.png" alt="" class="w-full" />
+              <div class="mt-10 mb-5 mx-6 font-secondary">
+                <p class="text-textgrey text-sm font-medium">January 3, 2023</p>
+                <h3 class="text-lg font-semibold my-4 tracking-tight">
+                  The secret tips & tricks to prepare a perfect burger & pizza
+                  for our customers
+                </h3>
+                <p class="text-sm text-textgrey mr-4 font-medium">
+                  Lorem ipsum dolor sit amet consectetur of a adipiscing
+                  elitilmim semper adipiscing massa gravida nisi cras enim quis
+                  nibholm varius amet gravida ut facilisis neque egestas.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="grid md:grid-cols-2 md:grid-rows-2 gap-5 font-secondary tracking-tight"
+          >
+            <div class="bg-white shadow-lg rounded-xl hover:shadow-2xl">
+              <a href="./blog.html">
+                <img src="./images/fries.png" alt="" class="w-full" />
+                <div class="mt-6 mb-2 mx-5 font-secondary">
+                  <p class="text-textgrey text-xs font-medium">
+                    January 3, 2023
+                  </p>
+                  <h3 class="text-lg font-semibold mt-3">
+                    How to prepare the perfect french fries in an air fryer
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl hover:shadow-2xl">
+              <a href="./blog.html">
+                <img src="./images/chicken-fried.png" alt="" class="w-full" />
+                <div class="mt-6 mb-2 mx-5 font-secondary">
+                  <p class="text-textgrey text-xs font-medium">
+                    January 3, 2023
+                  </p>
+                  <h3 class="text-lg font-semibold mt-3">
+                    How to prepare delicious chicken tenders
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl hover:shadow-2xl">
+              <a href="./blog.html">
+                <img src="./images/cupcakes.png" alt="" class="w-full" />
+                <div class="mt-6 mb-2 mx-5 font-secondary">
+                  <p class="text-textgrey text-xs font-medium">
+                    January 3, 2023
+                  </p>
+                  <h3 class="text-lg font-semibold mt-3">
+                    7 delicious cheesecake recipes you can prepare
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white shadow-lg rounded-xl hover:shadow-2xl">
+              <a href="./blog.html">
+                <img src="./images/pizza.png" alt="" class="w-full" />
+                <div class="mt-6 mb-2 mx-5 font-secondary">
+                  <p class="text-textgrey text-xs font-medium">
+                    January 3, 2023
+                  </p>
+                  <h3 class="text-lg font-semibold mt-3">
+                    5 great pizza restaurants you should visit this city
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog -->
+    <footer class="bg-customgray font-secondary text-center md:text-left">
+      <div class="text-white grid md:grid-cols-3 w-4/5 m-auto py-20">
+        <div>
+          <a href="./index.html">
+            <div
+              class="flex gap-3 items-center justify-center md:justify-normal"
+            >
+              <img src="./images/japanese-food-white.png" alt="" />
+              <h2 class="font-primary font-semibold italic text-3xl">
+                Bistro Bliss
+              </h2>
+            </div>
+          </a>
+          <p
+            class="text-footertext text-sm my-5 lg:mr-28 md:mr-5 leading-relaxed"
+          >
+            In the new era of technology we look a in the future with certainty
+            and pride to for our company and.
+          </p>
+          <div class="flex gap-3 justify-center md:justify-normal">
+            <a href="https://www.twitter.com/"
+              ><img
+                src="./images/footer-icon-1.png"
+                alt=""
+                class="hover:outline outline-2 rounded-full"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./images/footer-icon-2.png"
+                alt=""
+                class="hover:outline outline-2 rounded-full"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./images/footer-icon-3.png"
+                alt=""
+                class="hover:outline outline-2 rounded-full"
+            /></a>
+            <a href="https://www.github.com/"
+              ><img
+                src="./images/footer-icon-4.png"
+                alt=""
+                class="hover:outline outline-2 rounded-full"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="flex md:mx-1 lg:mx-4 mt-10 md:mt-0 md:gap-5 lg:gap-10 text-left ml-10"
+        >
+          <ul class="flex-1 text-sm">
+            <li class="font-medium mb-5">Pages</li>
+            <div class="leading-8 text-footertext text-sm">
+              <a href="./index.html">
+                <li class="hover:text-white">Home</li>
+              </a>
+              <a href="./about.html">
+                <li class="hover:text-white">About</li>
+              </a>
+              <a href="./menu.html">
+                <li class="hover:text-white">Menu</li>
+              </a>
+              <a href="./book.html">
+                <li class="hover:text-white">Pricing</li>
+              </a>
+              <a href="./blog.html">
+                <li class="hover:text-white">Blog</li>
+              </a>
+              <a href="./contact.html">
+                <li class="hover:text-white">Contact</li>
+              </a>
+              <a href="./book.html">
+                <li class="hover:text-white">Delivery</li>
+              </a>
+            </div>
+          </ul>
+          <ul class="flex-1 text-sm min-w-max">
+            <li class="font-medium mb-5">Utility Pages</li>
+            <div class="leading-8 text-footertext text-sm">
+              <a href="">
+                <li class="hover:text-white">Start Here</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">Styleguide</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">Password Protected</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">404 Not Found</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">Licenses</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">Changing</li>
+              </a>
+              <a href="">
+                <li class="hover:text-white">View More</li>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="md:ml-10 mt-10 md:mt-0">
+          <p class="mb-8 font-medium text-sm">Follow Us On Instagram</p>
+          <div class="grid grid-cols-2 grid-rows-2 gap-3">
+            <img src="./images/footer-img-1.png" alt="" />
+            <img src="./images/footer-img-2.png" alt="" />
+            <img src="./images/footer-img-3.png" alt="" />
+            <img src="./images/footer-img-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-footertext text-sm pb-14">
+        Copyright &copy; Hashtag Developer. All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
